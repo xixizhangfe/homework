@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="hm_calculator.js">
+		</script>
+		<link rel="stylesheet" href="hm_calculator.css"/>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td colspan="4">
+					<input type="text" id="screenName" value="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" id="clear" value="C" onclick="clearScreen()"/>
+				</td>
+				<td>
+					<input type="button" id="div" value="/" onclick="fn(this.id)"/>
+				</td>
+				<td>
+					<input type="button" id="times" value="*" onclick="fn(this.id)"/>
+				</td>
+				<td>
+					<input type="button" id="tuige" value="tuige" onclick="tuige(this.id)"/>
+				</td>
+				
+			</tr>
+			<tr>
+				<td>
+					<input type="button" id="7" value="7" onclick="fn(this.id)"/>
+				</td>
+				<td>
+					<input type="button" id="8" value="8" onclick="fn(this.id)"/>
+				</td>
+				<td>
+					<input type="button" id="9" value="9" onclick="fn(this.id)"/>
+				</td>
+				<td>
+					<input type="button" id="-" value="-" onclick="fn(this.id)"/>
+				</td>
+				
+			</tr>
+			<tr>
+				<td>
+					<input type="button" id="4" value="4" onclick="fn(this.id)"/>
+				</td>
+				<td>
+					<input type="button" id="5" value="5" onclick="fn(this.id)"/>
+				</td>
+				<td>
+					<input type="button" id="6" value="6" onclick="fn(this.id)"/>
+				</td>
+				<td>
+					<input type="button" id="+" value="+" onclick="fn(this.id)"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" id="1" value="1" onclick="fn(this.id)"/>
+				</td>
+				<td>
+					<input type="button" id="2" value="2" onclick="fn(this.id)"/>
+				</td>
+				<td>
+					<input type="button" id="3" value="3" onclick="fn(this.id)"/>
+				</td>
+				<td rowspan="2">
+					<input type="button" id="=" value="=" onclick="cal(this.id)"/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input type="button" id="0" value="0" onclick="fn(this.id)"/>
+				</td>
+				<td>
+					<input type="button" id="dot" value="." onclick="fn(this.id)"/>
+				</td>	
+				
+			</tr>
+		</table>
+	</body>
+</html>
