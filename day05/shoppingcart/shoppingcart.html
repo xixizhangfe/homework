@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<style type="text/css">
+			body{
+				font: 14px/24px "微软雅黑";
+			}
+			ul{
+				list-style: none;
+				padding: 0;
+			}
+			
+			em{
+				display: inline-block;
+				min-width:2em ;
+				color: red;
+			}
+		</style>
+		<script src="shoppingcart.js"></script>
+	</head>
+
+	<body>
+		<ul id="list">
+			<li>
+				<input class="reduce" type="button" value='-' />
+				<strong class="num">0</strong>
+				<input class="plus" type="button" value='+' /> 
+				单价：<em class="price">12.5</em>元 
+				小计： <span class="subtotal">0</span>元
+			</li>
+			<li>
+				<input class="reduce" type="button" value='-' />
+				<strong class="num">0</strong>
+				<input class="plus" type="button" value='+' /> 
+				单价：<em class="price">7</em>元 
+				小计： <span class="subtotal">0</span>元
+			</li>
+			<li>
+				<input class="reduce" type="button" value='-' />
+				<strong class="num">0</strong>
+				<input class="plus" type="button" value='+' /> 
+				单价：<em class="price">5</em>元 
+				小计： <span class="subtotal">0</span>元
+			</li>
+			<li>
+				<input class="reduce" type="button" value='-' />
+				<strong class="num">0</strong>
+				<input class="plus" type="button" value='+' /> 
+				单价：<em class="price">17</em>元 
+				小计： <span class="subtotal">0</span>元
+			</li>
+			<li>
+				<input class="reduce" type="button" value='-' />
+				<strong class="num">0</strong>
+				<input class="plus" type="button" value='+' /> 
+				单价：<em class="price">1</em>元 
+				小计： <span class="subtotal">0</span>元
+			</li>
+		</ul>
+
+		<p class="result"></p>
+
+	</body>
+
+</html>

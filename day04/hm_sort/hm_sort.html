@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+	</head>
+	<body>
+		<script type='text/javascript'>
+			var arr=[34,55,1];
+			sortTest(arr);
+			console.log(arr);
+
+			function sortTest(arr){
+				quickHelper(arr,0,arr.length-1);
+
+				function quickHelper(arr,start,end){
+					if(start<end){
+						var part=partition(arr,start,end);
+						arguments.callee(arr,start,part-1);
+						arguments.callee(arr,part+1,end);
+					}
+				}
+					
+				function partition(arr,start,end){
+					var pivot=arr[end];
+					var i=start;
+					for(var j=start;j<end;j++){
+						if(arr[j]<pivot){
+							swap(arr,i,j);
+							i++;
+						}
+					}
+					swap(arr,i,end);
+					return i;	
+				}	
+				function swap(arr,i,j){
+					var temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+					}
+			}
+
+		</script>
+	</body>
+</html>
